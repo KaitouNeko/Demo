@@ -1,0 +1,67 @@
+// -------------------------------------
+// Susy Import
+// -------------------------------------
+//@import "susy";
+// -------------------------------------
+// Core Mixins
+// -------------------------------------
+@import "../core/core/mixins";
+// -------------------------------------
+// Variables Import
+// -------------------------------------
+// 載入全域變數
+@import "../core/core/variables";
+// -------------------------------------
+// Components / Modules Setting
+// -------------------------------------
+// 請輸入您的ClassName
+$classname: 'puzzle';
+// -------------------------------------
+// 您的CSS Code
+// -------------------------------------
+//以下範例可以刪除，改為您自已的CSS Code
+.#{$classname} {
+	body{
+		box-sizing: border-box;
+	}
+	img{
+	    width: 90px;
+	    height: auto;
+	    max-width: 100%;
+		max-height: 100%;
+		position: relative;
+		@media screen and (min-width: $screen-desktop) {
+			width: auto;
+		}
+	}
+	#gameBox{
+		overflow: hidden;
+		text-align: center;
+		margin: auto;
+		width:320px;
+		@media screen and (min-width: $screen-desktop) {
+			width: 980px;
+		}
+	}
+
+
+	// style on phone device
+	@media screen and (min-width: $screen-tablet) {
+		// style on tablet device
+	}
+	@media screen and (min-width: $screen-desktop) {
+		// style on desktop device
+	}
+	@media screen and (min-width: $screen-lg-desktop) {
+		// style on desktop device
+	}
+	&.#{$classname}_modifier {
+		
+	}
+	& > .#{$classname}_child {
+		
+	}
+	& .#{$classname}_descendant {
+
+	}
+}
