@@ -1,0 +1,90 @@
+// -------------------------------------
+// Susy Import
+// -------------------------------------
+//@import "susy";
+// -------------------------------------
+// Core Mixins
+// -------------------------------------
+@import "../core/core/mixins";
+// -------------------------------------
+// Variables Import
+// -------------------------------------
+// 載入全域變數
+@import "../core/core/variables";
+// -------------------------------------
+// Components / Modules Setting
+// -------------------------------------
+// 請輸入您的ClassName
+$classname: 'loadingAnimation';
+// -------------------------------------
+// 您的CSS Code
+// -------------------------------------
+//以下範例可以刪除，改為您自已的CSS Code
+
+.#{$classname} {
+* { box-sizing: border-box; }
+body { font-family: sans-serif; }
+	text-align: center;
+	.nav{
+		background-color: #444;
+		color: #FFF;
+		padding: 5px 10px;
+		border-radius: 2px;
+		.choose_item{
+			margin: 10px 0px;
+		}
+	.myCanvas{
+		display:inline-block;
+	}
+	input[type="file"] {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		border: 0;
+	}
+	input {
+		color: #444;
+	}
+	.custom-file-upload {
+		display: inline-block;
+		cursor: pointer;
+		margin: 10px 0px;
+		padding: 5px;
+		box-shadow: 0px 2px 4px rgba(128, 128, 128, 0.56);
+		&:hover{
+			background-color: #FFF;
+			color: #444;
+		}
+		@media (max-width: 600px) {
+			width: 100%;
+		}
+	}
+}
+
+
+
+label { margin-right: 10px; }
+	// style on phone device
+	@media screen and (min-width: $screen-tablet) {
+		// style on tablet device
+	}
+	@media screen and (min-width: $screen-desktop) {
+		// style on desktop device
+	}
+	@media screen and (min-width: $screen-lg-desktop) {
+		// style on desktop device
+	}
+	&.#{$classname}_modifier {
+		
+	}
+	& > .#{$classname}_child {
+		
+	}
+	& .#{$classname}_descendant {
+
+	}
+}
