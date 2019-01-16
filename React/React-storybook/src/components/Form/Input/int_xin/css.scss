@@ -1,0 +1,106 @@
+@import '../../../../scss/core.scss';
+@import '../../../../scss/core/themes/xinmember';
+// -------------------------------------
+// Components / Modules Setting
+// -------------------------------------
+$classname: "int_xin";
+$radio-color-blue:#0077b3;
+@mixin size($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+.#{$classname} {
+    position: relative;
+    font-size: inherit;
+    color: $text-color;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    &.int-control {
+        display: inline-block;
+        border: 0;
+        cursor: pointer;
+        > .control-text{
+            line-height: 24px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        > select{
+            @include size(100%,100%);
+            padding: 6px;
+            line-height: 1.5;
+            border: 1px solid #ddd;
+        }
+        .radio{
+            height: 26px;
+        }
+        
+        &.radio{
+            margin-left: 25px;
+        }
+        &.select{
+            @include size(100%, 40px);
+        }
+        
+    }
+    &.input[type="text"] {
+        padding: 6px;
+        line-height: 1.5;
+    }
+    >input[type="radio"] {
+        display: none;
+        &:checked {
+            +.indicator {
+                &:after{
+                    position: absolute;
+                    @include size(10px,10px);
+                    content:'';
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    border-radius: 20px;
+                    background-color: $main-red;
+                }
+            }
+        }
+    }
+    
+    .indicator {
+        position: relative;
+        background-color: white;
+        box-sizing: border-box;
+        top: 2px;
+        bottom: -2px;
+        left: 0;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        margin-right: 10px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+        -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+        transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    }
+}
+
+
+
+.require {
+    .int-label {
+        >label:after {
+            content: "*";
+            color: #e10500;
+            display: inline-block;
+            line-height: 1;
+            vertical-align: middle;
+        }
+    }
+}
