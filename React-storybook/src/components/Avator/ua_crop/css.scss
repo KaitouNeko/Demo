@@ -1,0 +1,31 @@
+// -------------------------------------
+// Components / Modules Setting
+// -------------------------------------
+
+@import "../../../scss/core.scss";
+@import "../../../scss/core/themes/_xinshop.scss";
+
+$classname: "ua_crop";
+.#{$classname} {
+    label{
+        border: 1px solid #ccc;
+        display: inline-block;
+        padding: 6px 12px;
+        cursor: pointer;
+    }
+    input[type="file"] {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+    }
+    canvas{
+        width: 75px; 
+        height: 75px;
+    }
+}
+

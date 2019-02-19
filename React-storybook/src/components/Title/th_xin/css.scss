@@ -1,0 +1,47 @@
+// -------------------------------------
+// Components / Modules Setting
+// -------------------------------------
+@import "../../../scss/core.scss";
+@import "../../../scss/core/themes/_xinshop.scss";
+$classname: "th_xin";
+
+.#{$classname} {
+
+    text-decoration: none;
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    &.md {
+        color: $text-color;
+        font-family: $font-family-heading;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 30px;
+        line-height: 1.5;
+        &:before {
+            display: inline-block;
+            vertical-align: middle;
+            content: "";
+            width: 3px;
+            height: 33px;
+            background-color: #ff0000;
+            margin-right: 12px;
+        }
+    }
+
+    &.sm {
+        font-size: 18px;
+        line-height: 1.5;
+        color: $text-color;
+        font-family: $font-family-heading;
+        &.red {
+            color: $main-pink;
+        }
+    }
+
+    &.xs {
+        font-size: 13px;
+        line-height: 1.5;
+        color: $dark-gray;
+    }
+}

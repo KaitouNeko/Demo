@@ -1,0 +1,28 @@
+// -------------------------------------
+// Components / Modules Setting
+// -------------------------------------
+
+@import "../../../scss/core.scss";
+@import "../../../scss/core/themes/_xinshop.scss";
+
+$classname: "cd_xmcc";
+.#{$classname} {
+  padding: 15px 10px 20px;
+  &.half {
+      .btn {
+          display: inline-block;
+          white-space: nowrap;
+          width: 50%;
+          box-sizing: border-box;
+      }
+  }
+
+  &.inline {
+      .btn {
+          display: inline-block;
+          width: 100%;
+          box-sizing: border-box;
+      }
+  }
+
+}

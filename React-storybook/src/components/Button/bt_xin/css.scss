@@ -1,0 +1,73 @@
+// -------------------------------------
+// Components / Modules Setting
+// -------------------------------------
+
+@import "../../../scss/core.scss";
+@import "../../../scss/core/themes/_xinshop.scss";
+
+$classname: "bt_xin";
+
+@mixin size($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+.#{$classname} {
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        line-height: 20px;
+        padding: 10px;
+        border-radius: 20px;
+        text-align: center;
+        font-weight: bold;
+        transition: all 0.3s;
+        box-sizing: border-box;
+    &.bd_red {
+        background-color: $body-bg;
+        font-size: $font-size-base;
+        color: $main-pink;
+        border-color: $main-pink;
+        border: $main-pink solid 1px;
+        text-decoration: $link-decoration;
+        &:hover {
+            color: $body-bg;
+            background-color: $main-pink;
+            border-color: $main-pink;
+        }
+    }
+
+    &.bd_gray {
+        background-color: $body-bg;
+        font-size: $font-size-base;
+        color: $dark-gray-light;
+        border: $border-gray solid 1px;
+        text-decoration: $link-decoration;
+        &:hover {
+            color: $body-bg;
+            background-color: $main-pink;
+            border-color: $main-pink;
+        }
+    }
+
+    &.tiny {
+        font-size: 12px;
+        line-height: 15px;
+        padding: 5px;
+        color: $dark-gray-light;
+        border: $border-gray solid 1px;
+        text-decoration: $link-decoration;
+        cursor: pointer;
+    }
+
+    &.bd_none {
+        font-size: $font-size-medium;
+        color: $dark-gray-light;
+        padding: 10px;
+    }
+    &.bg_red {
+        background-color: $main-pink;
+        border-color: $main-pink;
+        color: $body-bg;
+    }
+}

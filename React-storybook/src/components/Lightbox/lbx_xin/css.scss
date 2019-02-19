@@ -1,0 +1,62 @@
+// -------------------------------------
+// Components / Modules Setting
+// -------------------------------------
+@import '../../../scss/core.scss';
+$classname: "lbx_xin";
+@mixin size($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+.#{$classname} {
+    .lightbox {
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transition: all 0.5s;
+        &.showbox {
+          opacity: 1;
+          z-index: 2;
+        }
+        > div {
+          width: 95%;
+          max-width: 980px;
+          max-height: 80vh;
+      
+          background-color: #fff;
+          position: absolute;
+          top: 50%;
+          left: 0px;
+          right: 0px;
+          margin: auto;
+          transform: translateY(-50%);
+          // > div {
+          //   width: 100%;
+          //   overflow: auto;
+          // }
+        }
+      }
+    .btnClose {
+      font-size: 18px;
+      line-height: 10px;
+      position: absolute;
+      top: -35px;
+      right: 0px;
+      z-index: -1;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background-color: #fff;
+    }
+    @media only screen and (min-width: $screen-md) {
+      .btnClose {
+        top: -30px;
+        right: -30px;
+      }
+    }
+}
