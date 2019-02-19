@@ -1,6 +1,6 @@
-# Xin-Kit
+# React-storybook
 
-A react UI Kit of XinMedia.
+A react UI For Demo.
 
 ```js
 yarn
