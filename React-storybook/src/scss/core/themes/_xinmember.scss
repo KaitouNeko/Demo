@@ -1,0 +1,36 @@
+// **************************************
+// 
+// Root Variables for uplan travel
+// 
+// **************************************
+//重點文字色
+$main-red:#ff0000;
+//主要按鈕色
+$main-pink:#ff635e;
+
+// body背景色
+$body-bg               : #fff;
+// 文字基本色
+$text-color            : $dark-gray-dark;
+// 一般連結顏色
+$link-color            : #0097c8;
+$link-color-red            : $main-pink;
+$link-color-gray            : $dark-gray-dark;
+
+// 連結Hover顏色
+// $link-hover-color      : #ea5404;
+
+//按鈕框線
+$border-gray:$light-gray-dark;
+//分隔線
+$border-hr:$light-gray ;
+//hover底色
+$bg-gray:$light-gray-lighter;
+
+
+// 字型設計
+$font-family-base      : "微軟正黑體", "Microsoft JhengHei", "微軟雅黑體", "Microsoft YaHei";
+$font-family-heading   : "微軟正黑體", "Microsoft JhengHei", "微軟雅黑體", "Microsoft YaHei";
+
+// 基本字級 13px
+// $font-size-body        : $font-size-small;
